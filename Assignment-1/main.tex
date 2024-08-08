@@ -1,0 +1,219 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Chapter 2 \\ Complex Numbers}
+\author{AI24BTECH11029-Rudrax Garwa}
+\maketitle
+\newpage
+\bigskip
+
+\renewcom mand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{ducument}
+\item 14. If $z^2+z+1=0$ ,where z is an imaginary number , then the value of $\left(z+\frac{1}{z}\right)^2 + \left(z^2+\frac{1}{z^2}\right)^2 + \left(z^3 +\frac{1}{z^3}\right)^2 +....+\left(z^6 +\frac{1}{z^6}\right)^2$ is 
+\hfill{\color{magenta}[2006]}
+\begin{multicols}{4}
+\begin{enumerate}
+\item 18
+\item 54
+\item 6
+\item 12
+\end{enumerate}
+\end{multicols}
+\item 15. If $|z+4|\leq 3$ , then the maximum value of $|z+1|$ is
+\hfill{\color{magenta}[2007]}
+\begin{multicols}{4}
+\begin{enumerate}
+\item 6
+\item 0
+\item 4
+\item 10
+\end{enumerate}
+\end{multicols}
+\item 16. The conjugate of a complex is $\frac{1}{i-1}$ then that complex number is
+\hfill{\color{magenta}[2008]}
+\begin{multicols}{1}
+\begin{enumerate}
+\item $\frac{-1}{i-1}$
+\item $\frac{1}{i+1}$
+\item $\frac{-1}{i+1}$
+\item $\frac{1}{i-1}$
+\end{enumerate}
+\end{multicols}
+\item 17. Let R be the real line.Consider the following subsets of the plane $R×R$:
+S=\{(x,y):y=x+1 and 0<x<2\}
+T=\{(x,y):x-y is an integer\},
+Which one of the following is true ?
+\hfill{\color{magenta}[2008]}
+\begin{multicols}{1}
+\begin{enumerate}
+\item Neither S nor T is an equivalence relation on R
+\item Both S and T are equivalence relation on R
+\item S is an equivalence relation on R but T is not
+\item T is an equivalence relation on R but S is not
+\end{enumerate}
+\end{multicols}
+\item 18. The number of complex numbers z such that $|z-1|=|z+1|=|z-i|$ equals
+\hfill{\color{magenta} [2010]}
+\begin{multicols}{4}
+\begin{enumerate}
+\item 1
+\item 2
+\item $\infty$
+\item 0
+\end{enumerate}
+\end{multicols}
+\item 19. Let $\alpha,\beta$ be real and z be a complex number. If $z^2 +z\alpha +\beta =0$  has two distinct roots on the line $Rez=1$,then it is necessary that:
+\hfill{\color{magenta}[2011]}
+\begin{multicols}{2}
+\begin{enumerate}
+\item $\beta \in (-1,0)$
+\item $|\beta|=1$
+\item $\beta\in (1,\infty)$
+\item $\beta\in (0,1)$
+\end{enumerate}
+\end{multicols}
+\item 20. If $\omega(\neq1)$ is the cube root of unity, and $\left(1+\omega \right)^7= A+ B\omega$ .Then $(A,B)$ equals
+\hfill{\color{magenta}[2011]}
+\begin{multicols}{2}
+\begin{enumerate}
+\item $(1,1)$
+\item $(1,0)$
+\item $(-1,1)$
+\item $(0,1)$
+\end{enumerate}
+\end{multicols}	
+\end{enumerate}
+\end{multicols}
+\item 21. If $z \neq 1 and \frac{z^2}{z-1}$ is real,then the point represented by the complex number z lies :
+\hfill{\color{magenta}[2012]}
+\begin{multicols}{2}
+\begin{enumerate}
+\item either on the real axis or on a circle not passing through the origin
+\item on a circle with centre at the origin
+\item either on the real axis or on a circle not passing through the origin 
+\item on imaginary axis
+\end{enumerate}
+\end{multicols}
+\item 22. If z is a complex number of unit modulus and arguement $\theta$,then the $arg\left(\frac{1+z}{1+conjugate of z}\right)$ equals:
+\hfill{\color{magenta}[JEE M 2013]}
+\begin{multicols}{4}
+\begin{enumerate}
+\item $-\theta$
+\item $\frac{\pi}{2}-\theta$
+\item $\theta$
+\item $\pi-\theta$
+\end{enumerate}
+\end{multicols}
+\item 23. If z is a complex number such that $|z|\geq 2$,then the minimum value of $|z+\frac{1}{2}|$ :
+\hfill{\color{magenta}[JEE M 2014]}
+\begin{multicols}{2}
+\begin{enumerate}
+\item is strictly greater than $\frac{5}{2}$
+\item is strictly greater than $\frac{3}{2}$ but less than $\frac{5}{2}$
+\item is equal to $\frac{5}{2}$
+\item lies in the interval $(1,2)$
+\end{enumerate}
+\end{multicols}
+\item 24. A complex number z is said to be unimodular if $|z|=1$. Suppose $z_1 and z_2$ are complex numbers such that $\frac{z_1 -2z_2}{2-z_1conjugate ofz_2}$ is unimodular and $z_2$ is not unimodular. Then the point $z_1$ lies on a:
+\hfill{\color{magenta}[JEE M 2016]}
+\begin{multicols}{2}
+\begin{enumerate}
+\item circle of radius 2
+\item circle of radius $\surd2$
+\item straight line parallel to x-axis
+\item straight line parallel to y-axis
+\end{enumerate}
+\end{multicols}
+\item 25.A value of $\theta$ for which $\frac{2+3isin\theta}{1-2isin\theta}$ is purely imaginary is :
+\hfill{\color{magenta}[JEE M2016]}
+\begin{multicols}{2}
+\begin{enumerate}
+\item $sin^{-1}\left(\frac{\surd3}{4}\right)$
+\item $sin^{-1}\left(\frac{1}{\surd3}\right)$
+\item $\frac{\pi}{3}$
+\item $\frac{\pi}{6}$
+\end{enumerate}
+\end{multicols}
+\item 26.Let  $A=\{\theta \in \left(\frac{\pi}{2},\pi\right) :\frac{3+2isin\theta}{1-2isin\theta}$is purely imaginary.\} Then the sum of element in A is:
+\hfill{\color{magenta}[JEE M 2019-9 Jan (M)]}
+\begin{multicols}{2}
+\begin{enumerate}
+\item $\frac{5\pi}{6}$
+\item $\pi$
+\item $\frac{3\pi}{4}$
+\item $\frac{2\pi}{3}$
+\end{enumerate}
+\end{multicols}
+\item 27.let $\alpha$ and $\beta$ be two roots of the equation $x^2+2x+2=0$,then $\alpha^{15}+\beta^{15}$ is equal to :
+\hfill{\color{magenta}[JEE M 2019-Jan (M)]}
+\begin{multicols}{2}
+\begin{enumerate}
+\item $-256$
+\item $512$
+\item $-512$
+\item $256$
+\end{enumerate}
+\end{multicols}
+\item 28. All the points in the set 
+   $S=\left\{\frac{\alpha+i}{\alpha-i}:\alpha \in R\right\}$ $(i=\surd{-1})$ lie on a:
+\hfill{\color{magenta}[JEE M 2019-9 April (M)]}
+\begin{multicols}{2}
+\begin{enumerate}
+\item straight line whose slope is 1
+\item circle whose radius is 1
+\item circle whose radius is $\surd2$
+\item straight line whose slope is -1
+\end{enumerate}
+\end{multicols}
+\end{enumerate}
+\end{document}
