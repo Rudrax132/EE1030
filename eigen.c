@@ -104,7 +104,7 @@ int main() {
     int itr;
     printf("Enter the number of iterations for QR algorithm: ");
     scanf("%d",&itr);
-    // Perform QR algorithm with a maximum of 100 iterations
+    // Perform QR algorithm with a maximum of given number of iterations
     qr_algorithm(A, n, itr);
 
     // Free the allocated memory
